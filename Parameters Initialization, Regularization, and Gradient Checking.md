@@ -1,9 +1,8 @@
-$\newcommand{\abs}[1]{\left| #1 \right|}$  
-# $\text{Deep Learning Fundamentals: Parameter Initialization, Regularization \& Gradient Checking}$
+# $\text{Parameter Initialization, Regularization and Gradient Checking}$
 
 *A comprehensive guide covering the essential techniques for training stable and efficient deep neural networks*
 
-## $\text{Table of Contents}$
+## Table of Contents
 1. [Parameter Initialization](#parameter-initialization)
 2. [Regularization Techniques](#regularization-techniques)
 3. [Gradient Checking](#gradient-checking)
@@ -12,9 +11,9 @@ $\newcommand{\abs}[1]{\left| #1 \right|}$
 
 ---
 
-## $\text{Parameter Initialization}$
+## Parameter Initialization
 
-### $Why~Proper~Initialization~Matters$
+### $Why ~ Proper ~ Initialization ~ Matters$
 
 Parameter initialization is critical for successful deep learning training. Poor initialization can lead to:
 - **Vanishing gradients**: Gradients become exponentially small in deep networks
@@ -22,17 +21,19 @@ Parameter initialization is critical for successful deep learning training. Poor
 - **Symmetry breaking**: All neurons learn the same features
 - **Slow convergence**: Training takes much longer to reach optimal solutions
 
-### $The~Mathematical~Foundation$
+### $The ~ Mathematical ~ Foundation$
 
 For proper signal propagation through deep networks, we need to maintain the variance of activations and gradients across layers. The key insight is that _the variance of a layer's output should be approximately equal to the variance of its input._
 
 **Forward Pass Variance Preservation:**  
+
 $$Var(output) ≈ Var(input)$$  
 
 **Backward Pass Variance Preservation:**  
+
 $$Var(gradient) ≈ Var(upstream\_gradient)$$
 
-### $Common~Initialization~Methods$
+### $Common ~ Initialization ~ Methods$
 
 #### 1. Zero Initialization ❌
 ```python
@@ -44,7 +45,7 @@ W = np.zeros((n_in, n_out))
 ```python
 W = np.random.randn(n_in, n_out) * 0.01
 ```
-**Problem**: Activations and gradients shrink exponentially in deep networks, which casues _vanishing gradients_.
+**Problem**: Activations and gradients shrink exponentially in deep networks, which causes _vanishing gradients_.
 
 #### 3. Xavier/Glorot Initialization ✅
 **Best for**: Tanh and Sigmoid activation functions
@@ -107,16 +108,17 @@ b = np.zeros(n_out)  # Initialize biases to zero
 b = np.full(n_out, 0.01)  # Small positive bias to ensure initial activation
 ```  
 
-## $\text{Regularization Techniques}$
+## Regularization Techniques
 
 Regularization prevents overfitting by adding constraints or noise to the learning process, helping models generalize better to unseen data.
 
-### $1.~L_1~and~L_2~Regularization$
+### $1. ~ L_1 ~ and ~ L_2 ~ Regularization$
 
 #### L2 Regularization (Weight Decay)
 **Most Common**: Penalizes large weights by adding their squared magnitude to the loss.
 
-**Mathematical Form:**
+**Mathematical Form:**  
+
 $$ J_{regularized} = J_{original} + \frac{\lambda}{2m} ~ \sum^m W^2 $$
 
 **Implementation:**
@@ -137,8 +139,9 @@ dW += lambda_reg * W
 #### L1 Regularization (Lasso)
 **Sparsity-Inducing**: Promotes sparse weights (many weights become exactly zero).
 
-**Mathematical Form:**
-$$ J_{regularized} = J_{original} + \frac{\lambda}{m} ~ \sum^m \abs{W} $$
+**Mathematical Form:**  
+
+$$ J_{regularized} = J_{original} + \frac{\lambda}{m} ~ \sum^m \left| W \right| $$
 
 **Implementation:**
 ```python
@@ -155,7 +158,7 @@ dW += lambda_reg * np.sign(W)
 - Sparse models (smaller memory footprint)
 - Interpretable models
 
-### $2.~Dropout$
+### $2. ~ Dropout$
 
 **Core Idea**: Randomly set a fraction of neurons to zero during training, forcing the network to learn redundant representations.
 
@@ -164,7 +167,7 @@ During training:
 ```python
 h_dropout = h * mask / keep_prob
 ```
-where $\text{mask} \approx \text{Bernoulli(keep\_prob)} $  
+where $\text{mask} \approx \text{Bernoulli(keep-prob)} $  
 
 During inference:  
 ```python
@@ -215,19 +218,18 @@ The inverted dropout (scaling during training) is now the standard approach beca
 - Can increase training time
 - Less effective in very deep networks with proper normalization
 
-### $3.~Batch~Normalization$
+### $3. ~ Batch ~ Normalization$
 
 **Revolutionary Technique**: Normalizes _inputs to each layer_, dramatically improving training stability and speed.
 
-**Mathematical Formulation:**
-$$ 
-\begin{align} 
+**Mathematical Formulation:**  
+
+$$ \begin{align} 
 \text{Batch mean: } \quad & \mu_B = \frac 1 m \times \sum^m X \\
 \text{Batch variance: } \quad & \sigma^2_B = \frac 1 m \times \sum^m~(X - \mu_B)^2 \\      
 \text{Normalize: } \quad & \hat X = \frac{X - \mu_B} {\sqrt{\sigma^2_B + \epsilon}} \\
 \text{Scale and shift: } \quad & Y = \gamma \times \hat X + \beta 
-\end{align} 
-$$
+\end{align} $$
 
 **Implementation:**
 ```python
