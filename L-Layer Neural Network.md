@@ -132,10 +132,10 @@ $$dA^{[l-1]} = (W^{[l]})^T dZ^{[l]}$$
 $\text{Output Layer:}$  
 
 $$\begin{align}
-dZ^{\[L\]} &= \frac{\partial J}{\partial A^{\[L\]}} \odot g'^{\[L\]}(Z^{\[L\]}) \\
-dW^{\[L\]} &= \frac{1}{m} dZ^{\[L\]} (A^{\[L-1\]})^T \\
-db^{\[L\]} &= \frac{1}{m} \sum_{i=1}^{m} dZ^{\[L\] (\cdot,i)} \\
-dA^{\[L-1\]} &= (W^{\[L\]})^T dZ^{\[L\]} \\
+dZ^{[L]} &= \frac{\partial J}{\partial A^{[L]}} \odot g'^{[L]}(Z^{[L]}) \\
+dW^{[L]} &= \frac{1}{m} dZ^{[L]} (A^{[L-1]})^T \\
+db^{[L]} &= \frac{1}{m} \sum_{i=1}^{m} dZ^{[L] (\cdot,i)} \\
+dA^{[L-1]} &= (W^{[L]})^T dZ^{[L]} \\
 \end{align}$$
 
 $\text{Hidden Layers } ( L-1 \geq l \geq 1)\text{: }$  
