@@ -1,11 +1,45 @@
-# $\text{Deep Learning Reference Hub 🧠}$
+# Deep Learning Reference Hub 🧠
 
 _A comprehensive collection of deep learning concepts, techniques, and best practices - carefully curated and documented for practitioners and researchers._
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Last Updated](https://img.shields.io/badge/Last%20Updated-July%202025-blue.svg)](https://github.com/yourusername/deep-learning-reference-hub)
 
-## 🎯 $\text{Purpose}$
+---
+
+## 📌 Table of Contents
+
+- [Deep Learning Reference Hub](#deep-learning-reference-hub-)
+  - [Table of Contents](#-table-of-contents)
+  - [Purpose](#-purpose)
+  - [Current Content](#-current-content)
+    - [Mathematical Foundations](#-mathematical-foundations)
+    - [Training Techniques](#-training-techniques)
+  - [Quick Start](#-quick-start)
+    - [For Mathematical Understanding](#for-mathematical-understanding)
+    - [For practical Implementation](#for-practical-implementation)
+  - [Code Examples](#️-code-examples)
+  - [Learning Path Recommendations](#-learning-path-recommendations)
+    - [Path 1: Academic/Research Focus](#path-1-academicresearch-focus)
+    - [Path 2: Industry/Practical Focus](#path-2-industrypractical-focus)
+    - [Path 3: Domain-Specific Focus](#path-3-domain-specific-focus)
+  - [How to Navigate](#-how-to-navigate)
+    - [By Difficulty Level](#by-difficulty-level)
+    - [By Application Domain](#by-application-domain)
+    - [By Framework](#by-framework)
+  - [Repository Growth](#-repository-growth)
+  - [Quality Standards](#-quality-standards)
+  - [External Resources](#-external-resources)
+  - [License](#-license)
+  - [Contributing](#-contributing)
+    - [Quick Contribution Steps](#quick-contribution-steps)
+  - [Acknowledgments](#-acknowledgments)
+  - [Repository Statistics](#-repository-statistics)
+  - [Contact](#-contact)
+
+---
+
+## 🎯 Purpose
 
 This repository serves as a living reference guide for deep learning concepts, documenting key techniques, mathematical foundations, and modern best practices. Each document is crafted to be:
 
@@ -14,7 +48,9 @@ This repository serves as a living reference guide for deep learning concepts, d
 - **Practical**: Includes working code examples and real-world applications
 - **Educational**: Suitable for both beginners and experienced practitioners
 
-## 📚 $\text{Current Content}$
+---
+
+## 📚 Current Content
 
 ### 🧮 Mathematical Foundations
 - **[L-Layer Neural Network](L-Layer%20Neural%20Network.md)**
@@ -30,16 +66,25 @@ This repository serves as a living reference guide for deep learning concepts, d
   - Regularization methods (L1, L2, dropout, batch normalization)
   - Gradient checking for debugging neural networks
   - Includes practical code examples and recent best practices
+- **[Optimization Algorithms](fundamentals/Optimization%20Algorithms.md)**
+  - Comprehensive overview of optimization methods for deep learning
+  - Covers theoretical foundations and practical considerations
+  - Includes step-by-step derivations and use cases for each method
 
-## 🚀 $\text{Quick Start}$
+---
+
+## 🚀 Quick Start
 
 ### For Mathematical Understanding
-Start with **[L-Layer Neural Network](L-Layer%20Neural%20Network.md)** to understand the fundamental mathematics behind deep learning, including complete derivations and the chain rule applications.
+Start with **[L-Layer Neural Network](theory/L-Layer%20Neural%20Network.md)** to understand the fundamental mathematics behind deep learning, including complete derivations and the chain rule applications.
 
 ### For Practical Implementation
-Read **[Parameters Initialization, Regularization, and Gradient Checking](Parameters%20Initialization,%20Regularization,%20and%20Gradient%20Checking.md)** to learn essential training techniques with modern best practices and working code examples.
+Read **[Parameters Initialization, Regularization, and Gradient Checking](training-techniques/Parameters%20Initialization,%20Regularization,%20and%20Gradient%20Checking.md)** to learn essential training techniques with modern best practices and working code examples.  
+Next, explore **[Optimization Algorithms](training-techniques/Optimization%20Algorithms.md)** to understand how different optimizers, learning rate schedules, and gradient-based methods impact training efficiency and convergence, accompanied by practical implementations.
 
-## 🛠️ $\text{Code Examples}$
+---
+
+## 🛠️ Code Examples
 
 The practical documents include implementations using modern frameworks and techniques:
 - **TensorFlow/Keras** - Production-ready, industry-standard framework
@@ -56,24 +101,28 @@ model = tf.keras.Sequential([
                          activation='relu')
 ])
 ```
+---
 
-## $\text{🎓 Learning Path Recommendations}$
+## 🎓 Learning Path Recommendations
 
 ### Path 1: Academic/Research Focus
 ```
-Fundamentals → Architectures → Optimization → Generative Models → Latest Papers
+Theory → Training Techniques → Architectures → Generative Models → Latest Papers
 ```
 
 ### Path 2: Industry/Practical Focus
 ```
-Fundamentals → Practical Guides → Code Examples → Deployment → Debugging
+Theory → Training Techniques → Practical Guides → Code Examples → Deployment → Debugging
 ```
 
 ### Path 3: Domain-Specific Focus
 ```
-Fundamentals → [Computer Vision OR NLP] → Architectures → Practical Guides
+Theory → Training Techniques → [Computer Vision OR NLP] → Architectures → Practical Guides
 ```
-## $\text{🔍 How to Navigate}$
+
+---
+
+## 🔍 How to Navigate
 
 ### By Difficulty Level
 - 🟢 **Beginner**: Fundamentals, basic architectures
@@ -90,7 +139,9 @@ Fundamentals → [Computer Vision OR NLP] → Architectures → Practical Guides
 - 🌊 **TensorFlow**: Production-ready code
 - 🔢 **NumPy**: Educational, algorithmic implementations
 
-## $\text{📈 Repository Growth}$
+---
+
+## 📈 Repository Growth
 
 This repository is _actively growing_. New documents will be added covering:
 - Advanced architectures (CNNs, RNNs, Transformers)
@@ -101,7 +152,9 @@ This repository is _actively growing_. New documents will be added covering:
 
 Each new addition will maintain the same high standards of mathematical rigor and practical applicability.
 
-## $\text{🏆 Quality Standards}$
+---
+
+## 🏆 Quality Standards
 
 Every document in this repository follows strict quality guidelines:
 - ✅ **Mathematical Accuracy**: All derivations are verified and complete
@@ -109,36 +162,61 @@ Every document in this repository follows strict quality guidelines:
 - ✅ **Educational Value**: Suitable for both learning and reference
 - ✅ **Code Quality**: All examples are tested and functional (where applicable)
 
-## $\text{📚 External Resources}$
+---
 
-### Recommended Courses
-- [Deep Learning Specialization](https://www.coursera.org/specializations/deep-learning) by Andrew Ng
-- [Fast.ai Practical Deep Learning](https://www.fast.ai/)
-- [CS231n: Convolutional Neural Networks](http://cs231n.stanford.edu/)
+## 📚 External Resources
 
-### Essential Papers
-- [Attention Is All You Need](https://arxiv.org/pdf/1706.03762) - Transformer architecture
-- [Deep Residual Learning](https://arxiv.org/pdf/1512.03385) - ResNet
-- [Batch Normalization](https://arxiv.org/pdf/1502.03167) - Training acceleration
+For a full list of curated deep learning resources (papers, books, and courses), see [Resources.md](Resources.md).
 
-### Tools and Frameworks
-- [TensorFlow](https://www.tensorflow.org/) - Production ML platform
-- [PyTorch](https://pytorch.org/) - Research-friendly deep learning
-- [Weights & Biases](https://wandb.ai/) - Experiment tracking
-- [Papers With Code](https://paperswithcode.com/) - Latest research
+Essential references:
+- **Deep Learning (Goodfellow et al.)** – [deeplearningbook.org](https://www.deeplearningbook.org/)
+- **Adam Optimizer (Kingma & Ba, 2014)** – [arxiv.org/abs/1412.6980](https://arxiv.org/abs/1412.6980)
 
-## $\text{📄 License}$
+---
+
+## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## $\text{🙏 Acknowledgments}$
+---
+
+## 🤝 Contributing
+
+We welcome contributions from the community! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details on:
+
+- 📝 **Documentation**: Improving existing guides or adding new topics
+- 💻 **Code Examples**: Adding implementations in different frameworks
+- 🐛 **Bug Reports**: Fixing errors or outdated information
+- 💡 **Suggestions**: Proposing new topics or improvements
+
+### Quick Contribution Steps
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-topic`)
+3. Follow our documentation style guide
+4. Add your contribution
+5. Submit a pull request
+
+---
+
+## 📊 Repository Statistics
+
+- **Total Documents**: 3 (and growing)
+- **Code Examples**: 8+ implementations
+- **Frameworks Covered**: PyTorch, TensorFlow, NumPy
+- **Last Updated**: July 2025
+
+---
+
+## 🙏 Acknowledgments
 
 - **Andrew Ng** and the Deep Learning Specialization team for foundational education
 - **The PyTorch and TensorFlow teams** for excellent frameworks
 - **The open-source community** for continuous contributions and feedback
 - **Researchers worldwide** who make their work freely available
 
-## $\text{📞 Contact}$
+---
+
+## 📞 Contact
 
 - **Issues**: Please use [GitHub Issues](https://github.com/eima40x4c/deep-learning-reference-hub/issues)
 - **Discussions**: Join our [GitHub Discussions](https://github.com/eima40x4c/deep-learning-reference-hub/discussions)
@@ -148,4 +226,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 #### ⭐ **Star this repository** if you find it helpful! It motivates us to keep improving and adding new content.
 
-### $\text{Happy Learning!}$ 🚀
+## $\text{Happy Learning! - Made with Love}$ ❤️
