@@ -1,33 +1,33 @@
 # $\text{Complete Mathematical Derivation: L-Layer Neural Network}$
-## Table of Contents
-- [$\text{Complete Mathematical Derivation: L-Layer Neural Network}$](#textcomplete-mathematical-derivation-l-layer-neural-network)
-  - [Table of Contents](#table-of-contents)
-  - [$\text{Network Architecture and Notation}$](#textnetwork-architecture-and-notation)
+## $\text{Table of Contents}$
+- [Complete Mathematical Derivation: L-Layer Neural Network](#textcomplete-mathematical-derivation-l-layer-neural-network)
+  - [Table of Contents](#texttable-of-contents)
+  - [Network Architecture and Notation](#textnetwork-architecture-and-notation)
     - [Network Structure](#network-structure)
-  - [$\text{Forward Propagation}$](#textforward-propagation)
+  - [Forward Propagation](#textforward-propagation)
     - [Complete Forward Pass](#complete-forward-pass)
-  - [$\text{Cost Function}$](#textcost-function)
-  - [$\text{Backward Propagation: Complete Mathematical Derivation}$](#textbackward-propagation-complete-mathematical-derivation)
+  - [Cost Function](#textcost-function)
+  - [Backward Propagation: Complete Mathematical Derivation](#textbackward-propagation-complete-mathematical-derivation)
     - [Step 1: Derivative with respect to Output Layer Activations](#step-1-derivative-with-respect-to-output-layer-activations)
     - [Step 2: Derivative with respect to Output Layer Pre-activations](#step-2-derivative-with-respect-to-output-layer-pre-activations)
     - [Step 3: Derivatives with respect to Parameters of Layer L](#step-3-derivatives-with-respect-to-parameters-of-layer-l)
     - [Step 4: Derivative with respect to Previous Layer Activations](#step-4-derivative-with-respect-to-previous-layer-activations)
     - [Step 5: General Recursive Formula for Hidden Layers](#step-5-general-recursive-formula-for-hidden-layers)
-  - [$\text{Complete Backward Propagation Algorithm}$](#textcomplete-backward-propagation-algorithm)
+  - [Complete Backward Propagation Algorithm](#textcomplete-backward-propagation-algorithm)
     - [Mathematical Formulation](#mathematical-formulation)
   - [Activation Functions and Their Derivatives](#activation-functions-and-their-derivatives)
     - [ReLU Activation](#relu-activation)
     - [Sigmoid Activation](#sigmoid-activation)
     - [Hyperbolic Tangent](#hyperbolic-tangent)
     - [Leaky ReLU](#leaky-relu)
-  - [$\text{Dimensional Analysis}$](#textdimensional-analysis)
+  - [Dimensional Analysis](#textdimensional-analysis)
     - [Forward Propagation Dimensions](#forward-propagation-dimensions)
     - [Backward Propagation Dimensions](#backward-propagation-dimensions)
   - [Matrix Calculus Foundations](#matrix-calculus-foundations)
     - [Key Matrix Derivatives](#key-matrix-derivatives)
     - [Chain Rule in Matrix Form](#chain-rule-in-matrix-form)
     - [Vectorization Benefits](#vectorization-benefits)
-  - [Parameter Update Rule](#parameter-update-rule)
+  - [Parameter Update Rule](#textparameter-update-rule)
 
 
 ## $\text{Network Architecture and Notation}$
@@ -246,7 +246,7 @@ $$\frac{\partial J}{\partial W^{[l]}} = \frac{\partial J}{\partial Z^{[l]}} \fra
 - Efficient GPU computation through BLAS operations
 - Reduced computational complexity from $O(mn^2L)$ to $O(n^2L)$ per iteration
 
-## Parameter Update Rule
+## $\text{Parameter Update Rule}$
 
 After computing all gradients:  
 
