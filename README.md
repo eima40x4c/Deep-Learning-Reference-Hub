@@ -33,8 +33,8 @@ _A comprehensive collection of deep learning concepts, techniques, and best prac
   - [License](#-license)
   - [Contributing](#-contributing)
     - [Quick Contribution Steps](#quick-contribution-steps)
-  - [Acknowledgments](#-acknowledgments)
   - [Repository Statistics](#-repository-statistics)
+  - [Acknowledgments](#-acknowledgments)
   - [Contact](#-contact)
 
 ---
@@ -53,7 +53,7 @@ This repository serves as a living reference guide for deep learning concepts, d
 ## 📚 Current Content
 
 ### 🧮 Mathematical Foundations
-- **[L-Layer Neural Network](L-Layer%20Neural%20Network.md)**
+- **[L-Layer Neural Network](theory/L-Layer%20Neural%20Network.md)**
   - Complete mathematical derivation for L-layered neural networks
   - Step-by-step forward and backward propagation equations
   - Chain rule applications and dimensional analysis
@@ -61,12 +61,12 @@ This repository serves as a living reference guide for deep learning concepts, d
   - Pure mathematical approach without code examples
 
 ### 🔧 Training Techniques
-- **[Parameters Initialization, Regularization, and Gradient Checking](Parameters%20Initialization,%20Regularization,%20and%20Gradient%20Checking.md)**
+- **[Parameters Initialization, Regularization, and Gradient Checking](training-techniques/Parameters%20Initialization,%20Regularization,%20and%20Gradient%20Checking.md)**
   - Modern parameter initialization techniques (He, Xavier, etc.)
   - Regularization methods (L1, L2, dropout, batch normalization)
   - Gradient checking for debugging neural networks
   - Includes practical code examples and recent best practices
-- **[Optimization Algorithms](fundamentals/Optimization%20Algorithms.md)**
+- **[Optimization Algorithms](training-techniques/Optimization%20Algorithms.md)**
   - Comprehensive overview of optimization methods for deep learning
   - Covers theoretical foundations and practical considerations
   - Includes step-by-step derivations and use cases for each method
@@ -219,7 +219,6 @@ We welcome contributions from the community! Please see our [Contributing Guidel
 ## 📞 Contact
 
 - **Issues**: Please use [GitHub Issues](https://github.com/eima40x4c/deep-learning-reference-hub/issues)
-- **Discussions**: Join our [GitHub Discussions](https://github.com/eima40x4c/deep-learning-reference-hub/discussions)
 - **Email**: [Eima40x4c](mailto:imalwaysforlife@gmail.com)
 
 ---
