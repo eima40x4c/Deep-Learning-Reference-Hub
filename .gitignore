@@ -51,6 +51,7 @@ Desktop.ini
 
 *.csv
 *.json
+*.jsonl
 *.txt
 *.zip
 *.tar.gz
