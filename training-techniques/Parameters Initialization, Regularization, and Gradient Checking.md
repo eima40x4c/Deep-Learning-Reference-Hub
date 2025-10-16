@@ -3,11 +3,37 @@
 *A comprehensive guide covering the essential techniques for training stable and efficient deep neural networks*
 
 ## Table of Contents
-1. [Parameter Initialization](#parameter-initialization)
-2. [Regularization Techniques](#regularization-techniques)
-3. [Gradient Checking](#gradient-checking)
-4. [Modern Best Practices](#modern-best-practices)
-5. [Implementation Examples](#implementation-examples)
+- [Parameter Initialization, Regularization and Gradient Checking](#textparameter-initialization-regularization-and-gradient-checking)
+  - [Table of Contents](#table-of-contents)
+  - [Parameter Initialization](#parameter-initialization)
+    - [Why Proper Initialization Matters](#why--proper--initialization--matters)
+    - [The Mathematical Foundation](#the--mathematical--foundation)
+    - [Common Initialization Methods](#common--initialization--methods)
+      - [1. Zero Initialization](#1-zero-initialization-)
+      - [2. Random Small Values](#2-random-small-values-)
+      - [3. Xavier/Glorot Initialization](#3-xavierglorot-initialization-)
+      - [4. He Initialization](#4-he-initialization-)
+      - [5. Modern Initialization Strategies](#5-modern-initialization-strategies)
+    - [Bias Initialization](#bias-initialization)
+  - [Regularization Techniques](#regularization-techniques)
+    - [1. $L_1$ and $L_2$ Regularization](#1--l_1--and--l_2--regularization)
+      - [L2 Regularization (Weight Decay)](#l2-regularization-weight-decay)
+      - [L1 Regularization (Lasso)](#l1-regularization-lasso)
+    - [2. Dropout](#2--dropout)
+    - [3. Batch Normalization](#3--batch--normalization)
+    - [4. Early Stopping](#4--early--stopping)
+  - [Gradient Checking](#gradient-checking)
+    - [Mathematical Foundation](#mathematical-foundation)
+    - [Interpretation of Results](#interpretation-of-results)
+    - [Common Issues and Debugging Tips](#common-issues-and-debugging-tips)
+  - [Modern Best Practices](#modern-best-practices)
+    - [2024 Recommendations](#2024--recommendations)
+    - [Framework-Specific Implementations](#framework-specific-implementations)
+  - [Implementation Examples](#implementation-examples)
+    - [Individual Techniques](#individual-techniques)
+    - [Complete Implementations](#complete-implementations)
+  - [Key Takeaways](#key-takeaways)
+
 
 ---
 
