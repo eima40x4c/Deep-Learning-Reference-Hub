@@ -3,7 +3,7 @@
 _A comprehensive collection of deep learning concepts, techniques, and best practices - carefully curated and documented for practitioners and researchers._
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Last Updated](https://img.shields.io/badge/Last%20Updated-July%202025-blue.svg)](https://github.com/yourusername/deep-learning-reference-hub)
+[![Last Updated](https://img.shields.io/badge/Last%20Updated-October%202025-blue.svg)](https://github.com/yourusername/deep-learning-reference-hub)
 
 ---
 
